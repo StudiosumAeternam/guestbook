@@ -9,7 +9,7 @@ pipeline {
         }
         stage('build') { 
             steps {
-                sh 'mvn --quiet clean package'
+                sh './mvnw clean package'
             }
         }
     }
