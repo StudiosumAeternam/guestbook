@@ -14,7 +14,7 @@ pipeline {
         }
         stage('pwd') { 
             steps {
-                sh 'pwd' 
+                sh 'ls -la ~/.ssh' 
             }
         }
 }
