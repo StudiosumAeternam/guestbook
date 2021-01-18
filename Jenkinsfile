@@ -12,5 +12,9 @@ pipeline {
                 sh './mvnw clean package'
             }
         }
-    }
+        stage('pwd') { 
+            steps {
+                sh 'pwd'
+            }
+        }
 }
