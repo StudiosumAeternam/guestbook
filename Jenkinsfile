@@ -14,7 +14,7 @@ pipeline {
         }
         stage('pwd') { 
             steps {
-                sh 'cat ~/.ssh/id_rsa.pub' 
+                sh 'pwd' 
             }
         }
 }
