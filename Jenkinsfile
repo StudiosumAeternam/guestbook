@@ -12,9 +12,9 @@ pipeline {
                 sh './mvnw clean package'
             }
         }
-        stage('pwd') { 
+        stage('push to dev') { 
             steps {
-                sh 'pwd' 
+                sh 'rsync -avzhe "ssh -p5022" ./targed/*.jar centos@$(cat /root/dev_ip)/var/project/app/artifact.jar' 
             }
         }
 }
