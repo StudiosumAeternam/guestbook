@@ -14,7 +14,7 @@ pipeline {
         }
         stage('push to dev') { 
             steps {
-                sh 'pwd' 
+                sh 'deploy.sh' 
             }
         }
 }
